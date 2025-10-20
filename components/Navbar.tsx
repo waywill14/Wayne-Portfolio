@@ -1,5 +1,4 @@
 import { Socials } from "@/constants";
-import Image from "next/image";
 import React from "react";
 
 const Navbar = () => {
@@ -16,7 +15,7 @@ const Navbar = () => {
           /> */}
         </div>
         <h1 className="text-white text-[25px] font-semibold">
-          Webchain{" "}
+          Software/GenAI{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             {" "}
             Dev{" "}
@@ -25,15 +24,21 @@ const Navbar = () => {
       </div>
 
       <div className="flex flex-row gap-5 mb-2">
-        {Socials.map((social) => (
-          <Image
-            key={social.name}
-            src={social.src}
-            alt={social.name}
-            width={28}
-            height={28}
-          />
-        ))}
+        {Socials.map((social) => {
+          const IconComponent = social.icon;
+          return (
+            <a
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-purple-400 transition-colors duration-200"
+              aria-label={social.name}
+            >
+              <IconComponent size={28} />
+            </a>
+          );
+        })}
       </div>
     </div>
   );

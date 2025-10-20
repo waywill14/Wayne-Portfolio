@@ -1,4 +1,5 @@
 import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+import { RiTwitterXFill, RiWhatsappFill } from "react-icons/ri";
 
 export const SkillData = [
   {
@@ -78,37 +79,35 @@ export const SkillData = [
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/instagram.svg",
+    name: "X (Twitter)",
+    icon: RiTwitterXFill,
+    url: "https://twitter.com/vortextai",
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
+    name: "WhatsApp",
+    icon: RiWhatsappFill,
+    url: "https://wa.me/+254768998494",
   },
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Cancer Awareness & Information Application",
+    text: "The Cancer Awareness Kenya app is a comprehensive, offline mobile platform tailored for Kenyans, empowering users with vital cancer information and support.",
     src: "/NextWebsite.png",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Little X",
+    text: "A modern social platform featuring a sleek dark interface and intuitive user authentication system, designed to connect users in a streamlined digital space",
     src: "/SpaceWebsite.png",
   },
   {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "VORTEX Portfolio",
+    text: "The Software/GenAI Dev portfolio is a sleek, modern Next.js-powered website showcasing innovative software and generative AI development expertise.",
     src: "/WebPortfolio.png",
   },
   {
     title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    text: "A sleek web application featuring an immersive Matrix-inspired design with animated digital rain effects, complete with modern navigation and user engagement features.",
     src: "/Matrix.png",
   },
 ];
